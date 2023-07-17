@@ -1,14 +1,21 @@
+import { NavLink } from "react-router-dom";
+import styles from "./PageNav.module.css";
 function PageNave() {
-    return (
-        <nav>
-            <ul>
-                <li>
-                    <Link to="/"
-                </li>
-            </ul>
-            
-        </nav>
-    )
+  return (
+    <nav className={styles.nav}>
+      <ul>
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="pricing">Pricing</NavLink>
+        </li>
+        <li>
+          <NavLink to="product">Product</NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 
-export default PageNave
+export default PageNave;
